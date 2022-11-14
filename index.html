@@ -38,13 +38,17 @@
               </nav>
               <div class="bodyof">
                 <div class="dropbox">
-                  <img src="assets/drag_box.png" class="dropboximg">
+                  <img src="assets/drag_box.png" class="dropboximg hidden">
+                  <div class="frame" >
+                    <img src="assets/Rectangle 2.png" class="frameimg ">
+                    <div id="display_image"></div>
+                  </div>
                 </div>
                 <div class="globe">
-                  <img src="assets/globe clear.png" class="globeimg">
+                  <img src="assets/globe clear.png" class="globeimg hidden">
                 </div>
                 <div class="blocks">
-                  <img src="assets/blocks clear.png" class="blocksimg">
+                  <img src="assets/blocks clear.png" class="blocksimg hidden">
                 </div>
                 <div class="container">
                   <div class="panel">
@@ -53,13 +57,7 @@
                         <input type="file" id="upload_file" name="">
                         Upload
                       </div>
-                      <div class="processing_bar"></div>
-                      <div class="success_box"></div>
                     </div>
-                  </div>
-                  <div class="error_msg"></div>
-                  <div class="uploaded_file_view" id="uploaded_view">
-                    <span class="file_remove">X</span>
                   </div>
                 </div>
               </div>
