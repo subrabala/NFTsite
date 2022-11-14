@@ -201,6 +201,10 @@ body {
   display: none;
 }
 
+/* .hidden{
+  transition: 2s linear;
+} */
 .hidden.hide{
   display: none;
+  transition: 2s linear;
 }

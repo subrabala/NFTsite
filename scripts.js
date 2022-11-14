@@ -1,6 +1,8 @@
 var marker = document.querySelector('#marker');
 var items=document.querySelectorAll('.collapse li');
-var toHide=document.getElementsByClassName(".hidden");
+
+const button_out=document.getElementById("btn_out");
+var toHide=document.getElementsByClassName("hidden");
 var frame=document.getElementsByClassName("frame");
 function indicator(e){
 marker.style.left = e.offsetLeft+"px";
@@ -13,12 +15,14 @@ item.addEventListener('click',(e)=>{
 })
 })
 
-
 const element = document.getElementById("upload_file");
-element.addEventListener("onclick", function() {
-    element.innerHTML = "Generate NFT";
-	toHide.classList.add('hide');
-	frame.classList.add('show');
+element.addEventListener("click", function() {
+	console.log(toHide, frame);
+    button_out.innerHTML = "Generate NFT";
+	toHide[0].classList.add('hide');
+	toHide[1].classList.add('hide');
+	toHide[2].classList.add('hide');
+	frame[0].classList.add('show');
 
 });
 
